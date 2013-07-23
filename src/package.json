@@ -21,5 +21,8 @@
     "digisfera"
   ],
   "author": "Emanuel Silva",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "express": "~3.3.4"
+  }
 }
