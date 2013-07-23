@@ -2,10 +2,7 @@
   "name": "cross-domain-http-test",
   "version": "0.0.0",
   "description": "Cross domain HTTP test using 3 servers running in different domains.",
-  "main": "iframe_server.coffee",
-  "scripts": {
-    "test": "mocha test"
-  },
+  "main": "src/run_servers.coffee",
   "repository": {
     "type": "git",
     "url": "cross-domain-http-test"
