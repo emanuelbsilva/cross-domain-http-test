@@ -12,10 +12,10 @@ allowCrossDomain = (req, res, next) ->
 app.use(allowCrossDomain)
 
 app.get '/', (req, res) ->
-  res.send('REQUESTED GET');
+  res.send('Test passed for GET request.');
 
 app.post '/', (req, res) ->
-  res.send('REQUESTED POST');
+  res.send('Test passed for POST request.');
 
 app.options '/', (req, res) ->
   res.send('REQUESTED OPTIONS');
