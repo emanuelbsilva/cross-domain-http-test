@@ -26,4 +26,5 @@ cross-domain-http-test is a test to run 3 different node.js servers, in differen
 
   Run the test:
 
-    $ coffee src/run_server.coffee
+  	$ cd src
+    $ coffee run_server.coffee
