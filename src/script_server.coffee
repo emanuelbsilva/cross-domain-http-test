@@ -7,6 +7,6 @@ app.use('/js', express.static(__dirname + '/views/js'));
 app.engine('html', require('ejs').renderFile);
 
 app.get '/', (req, res) ->
-  res.render('script.html', { backend_server_port: "//localhost:#{config.backend_server.port}"})
+  res.render('script.html', { backend_server_port: "//#{config.backend_server.domain}:#{config.backend_server.port}"})
 
 app.listen(config.script_server.port)
