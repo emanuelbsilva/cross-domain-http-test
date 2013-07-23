@@ -3,7 +3,8 @@
 	<script src="/js/script.js"></script>
 	<body>
 		<script>
-			callRemoteServer("<%= backend_server_port %>");
+			callRemoteServer("GET", "<%= backend_server_port %>");
+			callRemoteServer("POST", "<%= backend_server_port %>");
 		</script>
 	</body>
 </html>
