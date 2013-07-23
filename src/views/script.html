@@ -1,3 +1,9 @@
 <html>
-	<script src="script.js"></script>
+	<script src="/vendor/superagent.js"></script>
+	<script src="/js/script.js"></script>
+	<body>
+		<script>
+			callRemoteServer("<%= backend_server_port %>");
+		</script>
+	</body>
 </html>

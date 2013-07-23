@@ -1,8 +1,12 @@
 config = require('./configure')
 express = require('express')
+
 app = express()
+app.use('/vendor', express.static(__dirname + '/views/vendor'));
+app.use('/js', express.static(__dirname + '/views/js'));
+app.engine('html', require('ejs').renderFile);
 
 app.get '/', (req, res) ->
-  res.send('script server');
+  res.render('script.html', { backend_server_port: "//localhost:#{config.backend_server.port}"})
 
 app.listen(config.script_server.port)
