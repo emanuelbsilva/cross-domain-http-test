@@ -1,5 +1,8 @@
 # Cross Domain HTTP Test
-cross-domain-http-test is a test to run 3 different node.js servers, in different domains, to test if cross domain HTTP requests work under iframes. 
+
+cross-domain-http-test is a test to run 3 different express servers, in different domains, to test if cross domain HTTP requests work under iframes on different browsers. 
+
+It also serves as an example on how to support CORS down to IE 8.
 
 ## Description of each server
 
@@ -16,7 +19,7 @@ cross-domain-http-test is a test to run 3 different node.js servers, in differen
 
   Append the following lines in /etc/hosts:
   
-    127.0.0.1   iframe.test
+    127.0.0.1 iframe.test
     127.0.0.1	script.test
     127.0.0.1	backend.test
 
@@ -26,5 +29,4 @@ cross-domain-http-test is a test to run 3 different node.js servers, in differen
 
   Run the test:
 
-  	$ cd src
-    $ coffee run_server.coffee
+    $ coffee src/run_server.coffee
